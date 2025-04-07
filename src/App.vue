@@ -3,10 +3,9 @@
 
 <template>
   <div class="bg-red-400 form">
-    我是谁
-    <span>哈哈哈哈
-      <h1>的他</h1>
-    </span>
+    <RouterLink to="/home/index">Go to Home</RouterLink>
+    <RouterLink to="/about/index">Go to About</RouterLink>
+    <router-view></router-view>
   </div>
 </template>
 
