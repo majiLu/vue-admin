@@ -24,6 +24,13 @@ export default defineConfig([
   },
   eslintConfigPrettier,
   {
+    languageOptions: {
+      globals: {
+        window: 'readonly',
+        document: 'readonly'
+        // Add other global variables as needed
+      }
+    },
     rules: {
       'no-unused-vars': 'warn',
       'no-undef': 'warn',
